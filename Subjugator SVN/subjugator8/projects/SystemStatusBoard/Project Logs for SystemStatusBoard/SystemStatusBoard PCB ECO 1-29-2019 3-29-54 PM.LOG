@@ -1,0 +1,22 @@
+Added Component: Designator=N2(SSM3K329R,LF)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Toshiba Semiconductor and Storage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "SSM3K329R,LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "SSM3K329RLFTR-ND"; VariantName = "[No Variations]"
+Added Component: Designator=N3(SSM3K329R,LF)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Toshiba Semiconductor and Storage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "SSM3K329R,LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "SSM3K329RLFTR-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetN2_1 Pin=N2-1
+Added Pin To Net: NetName=GND Pin=N2-2
+Added Pin To Net: NetName=NetN2_3 Pin=N2-3
+Added Pin To Net: NetName=NetN3_1 Pin=N3-1
+Added Pin To Net: NetName=GND Pin=N3-2
+Added Pin To Net: NetName=NetN3_3 Pin=N3-3
+Added Member To Class: ClassName=SystemStatusBoard Member=Component N2 SSM3K329R,LF
+Added Member To Class: ClassName=SystemStatusBoard Member=Component N3 SSM3K329R,LF
+Added Room: Name=24Vto5Vat1A-R1
+Added Room: Name=SystemStatusBoard

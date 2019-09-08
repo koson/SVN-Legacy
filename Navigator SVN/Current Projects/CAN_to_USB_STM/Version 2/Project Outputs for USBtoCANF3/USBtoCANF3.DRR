@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: USBtoCANF3.PcbDoc   3/19/2019  3:41:12 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : USBtoCANF3.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.254mm)                                           Round             20        PTH        0.00inch (0.00mm)
+T2      30mil (0.762mm)                                           Round             4         PTH        0.00inch (0.00mm)
+T3      32mil (0.8mm)                                             Round             6         PTH        0.00inch (0.00mm)
+T4      35mil (0.9mm)                                             Round             30        PTH        0.00inch (0.00mm)
+T5      39mil (1mm)                                               Round             6         PTH        0.00inch (0.00mm)
+T6      129mil (3.264mm)                                          Round             4         PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              70
+
+Total Processing Time (hh:mm:ss) : 00:00:00

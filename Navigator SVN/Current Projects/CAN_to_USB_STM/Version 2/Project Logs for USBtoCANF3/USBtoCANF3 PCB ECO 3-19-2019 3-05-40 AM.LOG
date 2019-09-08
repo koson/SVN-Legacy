@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=3V3 Pin=P1-5
+Added Component: Designator=C11(CAPC0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Added Component: Designator=C12(CAPC0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Added Component: Designator=U2(SOT23-4n)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "LM3940IMPX-3.3/NOPBCT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=C11-1
+Added Pin To Net: NetName=3V3 Pin=C12-1
+Added Pin To Net: NetName=5V Pin=U2-1
+Added Pin To Net: NetName=3V3 Pin=U2-3
+Added Pin To Net: NetName=NetC11_2 Pin=C11-2
+Added Pin To Net: NetName=NetC11_2 Pin=C12-2
+Added Pin To Net: NetName=NetC11_2 Pin=U2-2
+Added Pin To Net: NetName=NetC11_2 Pin=U2-4
+Added Net: Name=NetC11_2
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C11 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C12 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component U2 3.3V LDO Reg

@@ -1,0 +1,10 @@
+lcd.c:15:6:LCD_command	32	static
+lcd.c:27:9:hex_to_ascii	24	static
+lcd.c:43:6:LCD_char	32	static
+lcd.c:55:6:LCD_clear	8	static
+lcd.c:61:6:LCD_line2	8	static
+lcd.c:67:6:LCD_cursor_home	8	static
+lcd.c:73:6:LCD_string	24	static
+lcd.c:81:6:LCD_print_float	40	static
+lcd.c:110:6:LCD_init	24	static
+lcd.c:122:7:percent_difference	24	static

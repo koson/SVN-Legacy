@@ -1,0 +1,77 @@
+Removed Pin From Net: NetName=NetC1_1 Pin=C1-1
+Removed Pin From Net: NetName=NetC6_1 Pin=C6-1
+Removed Pin From Net: NetName=LED_Pin1 Pin=R7-1
+Removed Pin From Net: NetName=NetN1_1 Pin=R7-2
+Removed Pin From Net: NetName=LED_Pin2 Pin=R9-1
+Removed Pin From Net: NetName=NetN2_1 Pin=R9-2
+Removed Pin From Net: NetName=LED_Pin3 Pin=R11-1
+Removed Pin From Net: NetName=NetN3_1 Pin=R11-2
+Removed Pin From Net: NetName=VDD Pin=U1-2
+Removed Pin From Net: NetName=GND Pin=U1-3
+Change Component Footprint: Designator=C7 Old Footprint=CAP1210 New Footprint=CAPC0603
+Change Component Footprint: Designator=C8 Old Footprint=CAP1210 New Footprint=CAPC0603
+Change Component Designator: OldDesignator=C1 NewDesignator=C10
+Change Component Designator: OldDesignator=C2 NewDesignator=C11
+Change Component Designator: OldDesignator=C3 NewDesignator=C12
+Change Component Designator: OldDesignator=C4 NewDesignator=C13
+Change Component Designator: OldDesignator=C5 NewDesignator=C14
+Change Component Designator: OldDesignator=C6 NewDesignator=C15
+Change Component Designator: OldDesignator=C7 NewDesignator=C16
+Change Component Designator: OldDesignator=C8 NewDesignator=C17
+Change Component Designator: OldDesignator=P4 NewDesignator=P5
+Change Component Designator: OldDesignator=P5 NewDesignator=P4
+Change Component Designator: OldDesignator=R1 NewDesignator=R13
+Change Component Designator: OldDesignator=R2 NewDesignator=R14
+Change Component Designator: OldDesignator=R6 NewDesignator=R8
+Change Component Designator: OldDesignator=R7 NewDesignator=R6
+Change Component Designator: OldDesignator=R8 NewDesignator=R7
+Change Component Designator: OldDesignator=U1 NewDesignator=U3
+Change component parameters: Designator = "LED1"; Footprint = "LED0603"; UniqueID = "\QKOYQNOV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Color"; Value = "Red"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "754-1122-1-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C16"; Footprint = "CAPC0603"; UniqueID = "\SYLRLTJI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C17"; Footprint = "CAPC0603"; UniqueID = "\MJAXWPUR"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R13"; Footprint = "RES0603"; UniqueID = "\CEFLTEHQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "40.2k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6"; Footprint = "RES0603"; UniqueID = "\HRXMSCKA"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9"; Footprint = "RES0603"; UniqueID = "\WPJHWVSY"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R11"; Footprint = "RES0603"; UniqueID = "\LEUHJLHV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC6_1 Pin=C10-1
+Added Pin To Net: NetName=NetC1_1 Pin=C15-1
+Added Pin To Net: NetName=NetN1_1 Pin=R6-1
+Added Pin To Net: NetName=LED_Pin1 Pin=R6-2
+Added Pin To Net: NetName=NetN2_1 Pin=R9-1
+Added Pin To Net: NetName=LED_Pin2 Pin=R9-2
+Added Pin To Net: NetName=NetN3_1 Pin=R11-1
+Added Pin To Net: NetName=LED_Pin3 Pin=R11-2
+Added Pin To Net: NetName=NetC6_1 Pin=U3-2
+Added Pin To Net: NetName=NetC1_1 Pin=U3-3
+Change Net Name : Old Net Name=NetC1_1 New Net Name=NetC15_1
+Change Net Name : Old Net Name=NetC1_2 New Net Name=NetC10_2
+Change Net Name : Old Net Name=NetC2_2 New Net Name=NetC11_2
+Change Net Name : Old Net Name=NetC6_1 New Net Name=NetC10_1

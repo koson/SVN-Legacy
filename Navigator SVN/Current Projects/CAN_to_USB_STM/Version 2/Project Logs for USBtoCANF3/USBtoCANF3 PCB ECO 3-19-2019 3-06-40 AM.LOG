@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Room: Name=USBtoCANF3

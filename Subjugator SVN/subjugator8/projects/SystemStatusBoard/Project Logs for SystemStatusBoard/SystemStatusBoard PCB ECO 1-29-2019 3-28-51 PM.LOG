@@ -1,0 +1,11 @@
+Change Component DesignItemId : Designator=U1 Old DesignItemId= New DesignItemId=TM4C123GH6PMT7R
+Added Component: Designator=N1(SSM3K329R,LF)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Toshiba Semiconductor and Storage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "SSM3K329R,LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "SSM3K329RLFTR-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetN1_1 Pin=N1-1
+Added Pin To Net: NetName=GND Pin=N1-2
+Added Pin To Net: NetName=NetN1_3 Pin=N1-3
+Added Member To Class: ClassName=SystemStatusBoard Member=Component N1 SSM3K329R,LF

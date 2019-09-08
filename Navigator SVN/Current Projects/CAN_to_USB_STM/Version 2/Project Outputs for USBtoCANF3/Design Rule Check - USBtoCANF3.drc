@@ -1,0 +1,90 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc
+Date     : 3/19/2019
+Time     : 3:40:25 AM
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=150mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=7mil) (All)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (1029mil,935mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (1054mil,1642mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (1210mil,1546mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (1430.504mil,416.496mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (1619mil,1967mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (1667mil,816mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (1793mil,-72mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (217mil,1536.062mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (234.504mil,1327.086mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (240mil,1512mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (393.464mil,1890.504mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (417mil,1697mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (440mil,1479mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (511.574mil,2000mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (711mil,1017mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (766mil,1513mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (843mil,791mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (937mil,1773mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (983.858mil,1633.858mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (6mil < 7mil) Via (988.062mil,1586.062mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)
+Rule Violations :20
+
+Processing Rule : Hole Size Constraint (Min=10mil) (Max=150mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Arc (652.874mil,1570.117mil) on Bottom Overlay And Pad U4-1(707.992mil,1586.062mil) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.936mil < 5mil) Between Pad R2-1(1577.48mil,1469.804mil) on Bottom Layer And Track (1563.7mil,1491.456mil)(1563.7mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [3.936mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.936mil < 5mil) Between Pad R2-1(1577.48mil,1469.804mil) on Bottom Layer And Track (1591.26mil,1491.456mil)(1591.26mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [3.936mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.938mil < 5mil) Between Pad R2-2(1577.48mil,1528.858mil) on Bottom Layer And Track (1563.7mil,1491.456mil)(1563.7mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [3.938mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.867mil < 5mil) Between Pad R2-2(1577.48mil,1528.858mil) on Bottom Layer And Track (1591.26mil,1491.456mil)(1591.26mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [4.867mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.118mil < 5mil) Between Pad S1-1(1189.646mil,1628.07mil) on Multi-Layer And Track (1134.528mil,1326.496mil)(1134.528mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.118mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.464mil < 5mil) Between Pad S1-2(1189.646mil,1428.07mil) on Multi-Layer And Track (1134.528mil,1326.496mil)(1134.528mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.464mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.074mil < 5mil) Between Pad S1-3(1489.646mil,1428.07mil) on Multi-Layer And Track (1547.914mil,1326.496mil)(1547.914mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.074mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (2.299mil < 5mil) Between Pad S1-4(1489.646mil,1628.07mil) on Multi-Layer And Text "R2" (1595.48mil,1574.496mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [2.299mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (4.074mil < 5mil) Between Pad S1-4(1489.646mil,1628.07mil) on Multi-Layer And Track (1547.914mil,1326.496mil)(1547.914mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.074mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-1(707.992mil,1586.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-2(707.992mil,1536.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-3(707.992mil,1486.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-4(707.992mil,1436.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-5(519.016mil,1436.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-6(519.016mil,1486.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-7(519.016mil,1536.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 5mil) Between Pad U4-8(519.016mil,1586.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+Rule Violations :18
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (7.65mil < 10mil) Between Text "R10" (660mil,1358.062mil) on Bottom Overlay And Track (534.764mil,1412.636mil)(692.244mil,1412.636mil) on Bottom Overlay Silk Text to Silk Clearance [7.65mil]
+Rule Violations :1
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 39
+Waived Violations : 0
+Time Elapsed        : 00:00:01

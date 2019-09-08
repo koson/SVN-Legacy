@@ -1,0 +1,12 @@
+USBtoCAN_backup.c:345:6:CANreceive	0	static
+USBtoCAN_backup.c:325:6:USBsend	8	static
+USBtoCAN_backup.c:329:6:USBreceive	8	static
+USBtoCAN_backup.c:335:6:CANsend	8	static
+USBtoCAN_backup.c:53:6:rotateByOne	0	static
+USBtoCAN_backup.c:68:6:InitUSBtoCAN	8	static
+USBtoCAN_backup.c:114:6:checkPacket	8	static
+USBtoCAN_backup.c:232:6:DecodeHeader	16	static
+USBtoCAN_backup.c:294:6:SendUsbDataToP1_CAN	8	static
+USBtoCAN_backup.c:302:6:RecCanDataFromP1	8	static
+USBtoCAN_backup.c:306:6:SendCanDataToP0_USB	24	static
+USBtoCAN_backup.c:81:6:USBtoCAN_RUN	8	static

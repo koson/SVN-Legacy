@@ -1,0 +1,12 @@
+USBtoCAN.c:289:6:CANreceive	0	static
+USBtoCAN.c:270:6:USBsend	8	static
+USBtoCAN.c:274:6:USBreceive	8	static
+USBtoCAN.c:280:6:CANsend	8	static
+USBtoCAN.c:54:6:rotateByOne	0	static
+USBtoCAN.c:69:6:InitUSBtoCAN	8	static
+USBtoCAN.c:115:6:checkPacket	8	static
+USBtoCAN.c:178:6:DecodeHeader	16	static
+USBtoCAN.c:239:6:SendUsbDataToP1_CAN	8	static
+USBtoCAN.c:247:6:RecCanDataFromP1	8	static
+USBtoCAN.c:251:6:SendCanDataToP0_USB	24	static
+USBtoCAN.c:82:6:USBtoCAN_RUN	8	static

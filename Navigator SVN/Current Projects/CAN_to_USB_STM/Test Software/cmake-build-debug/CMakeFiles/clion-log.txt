@@ -1,0 +1,4 @@
+"D:\rosem\ProgramFiles\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Test Software"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Documents/MIL/Navigator SVN/Current Projects/CAN_to_USB_STM/Test Software/cmake-build-debug

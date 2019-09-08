@@ -1,0 +1,3 @@
+- Current Designs folder is for current, complete designs that are currently in use.
+- Legacy Designs folder is for previous, complete designs that are not in use anymore.
+- Unfinished Designs folder is for unfinised designs.

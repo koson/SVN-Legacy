@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=5V Pin=U2-1
+Removed Pin From Net: NetName=GND Pin=U2-2
+Removed Pin From Net: NetName=3V3 Pin=U2-3
+Removed Pin From Net: NetName=GND Pin=U2-4
+Removed Member From Class: ClassName=USBtoCANF3 Member=U2
+Added Component: Designator=*(SOT23-4N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Digi-Key Part Number"; Value = "296-28778-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=*-1
+Added Pin To Net: NetName=3V3 Pin=*-2
+Added Pin To Net: NetName=5V Pin=*-3
+Added Pin To Net: NetName=3V3 Pin=*-4
+Added Member To Class: ClassName=USBtoCANF3 Member=Component * TLV1117LV33DCYR
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock

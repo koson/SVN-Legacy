@@ -1,0 +1,10 @@
+main.c:103:5:main	16	static
+main.c:160:6:SystemClock_Config	80	static
+main.c:200:13:MX_ADC_Init	24	static
+main.c:243:13:MX_CAN_Init	8	static
+main.c:264:13:MX_TIM2_Init	56	static
+main.c:302:13:MX_GPIO_Init	16	static
+main.c:314:6:CanSetup	8	static
+main.c:353:6:InitBattery	8	static
+main.c:360:6:GetVoltageCurrent	24	static
+main.c:409:6:_Error_Handler	16	static

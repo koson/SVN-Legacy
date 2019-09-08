@@ -1,0 +1,11 @@
+Added Component: Designator=U?(SOT23-4n)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "LM3940IMPX-3.3/NOPBCT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Vout Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=VDD Pin=U?-3
+Added Pin To Net: NetName=GND Pin=U?-4
+Added Member To Class: ClassName=SystemStatusBoard Member=Component U? 3.3V LDO Reg
+Added Room: Name=24Vto5Vat1A-R1
+Added Room: Name=SystemStatusBoard

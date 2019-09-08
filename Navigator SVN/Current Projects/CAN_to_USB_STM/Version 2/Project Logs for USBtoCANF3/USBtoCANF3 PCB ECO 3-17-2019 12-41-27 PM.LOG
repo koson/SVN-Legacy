@@ -1,0 +1,10 @@
+Added Component: Designator=R10(RES0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "120"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CANL_A Pin=R10-1
+Added Pin To Net: NetName=CANH_A Pin=R10-2
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component R10 Res

@@ -1,0 +1,14 @@
+Source PCB Design MILBoard.PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [MILBoard.PrjPCB]
+   Generated File[MILBoard.TXT]
+   Generated File[MILBoard.LDP]
+   Generated File[MILBoard.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 10:26:09 PM On 3/17/2019

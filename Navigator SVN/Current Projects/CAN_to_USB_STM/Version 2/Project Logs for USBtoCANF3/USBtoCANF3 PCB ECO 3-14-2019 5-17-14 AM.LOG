@@ -1,0 +1,2 @@
+Change Component Designator: OldDesignator=CANB NewDesignator=CANA
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock

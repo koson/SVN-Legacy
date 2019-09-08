@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=Top_Level.SchDoc
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Top_Level.SchDoc|Designator=U_DSP|SchDesignator=U_DSP|FileName=DSP.SchDoc|SymbolType=Normal|RawFileName=DSP.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Top_Level.SchDoc|Designator=U_Power|SchDesignator=U_Power|FileName=Power.SchDoc|SymbolType=Normal|RawFileName=Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Top_Level.SchDoc|Designator=U_RS485|SchDesignator=U_RS485|FileName=RS485.SchDoc|SymbolType=Normal|RawFileName=RS485.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Top_Level.SchDoc|Designator=U_USB|SchDesignator=U_USB|FileName=USB.SchDoc|SymbolType=Normal|RawFileName=USB.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

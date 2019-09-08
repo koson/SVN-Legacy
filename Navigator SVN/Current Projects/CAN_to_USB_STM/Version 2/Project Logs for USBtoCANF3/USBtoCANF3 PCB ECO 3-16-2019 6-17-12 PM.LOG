@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=P3 Old Footprint=HDR1X6 New Footprint=HDR1X8
+Change Component Comment : Designator=P3 Old Comment=Header 6 New Comment=Header 8
+Change Component Designator: OldDesignator=CANL CANH NewDesignator=CANA
+Change Component Designator: OldDesignator=CANL CANH NewDesignator=CANA
+Change Component Designator: OldDesignator=CANL CANH NewDesignator=CANA
+Added Pin To Net: NetName=CAN_TXA Pin=P3-7
+Added Pin To Net: NetName=CAN_RXA Pin=P3-8
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Room: Name=USBtoCANF3

@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=POEInjectorTop.SchDoc
+Record=SheetSymbol|SourceDocument=POEInjectorTop.SchDoc|Designator=G1|SchDesignator=G1|FileName=24Vto48V.SchDoc|SymbolType=Normal|RawFileName=24Vto48V.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=POEInjectorTop.SchDoc|Designator=T1|SchDesignator=T1|FileName=POEActiveTransformer.SchDoc|SymbolType=Normal|RawFileName=POEActiveTransformer.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=POEInjectorTop.SchDoc|Designator=T2|SchDesignator=T2|FileName=POEActiveTransformer.SchDoc|SymbolType=Normal|RawFileName=POEActiveTransformer.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

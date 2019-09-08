@@ -1,0 +1,63 @@
+Removed Pin From Net: NetName=GND Pin=P8-2
+Change Component Footprint: Designator=P9 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P10 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P11 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P12 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P13 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P14 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P15 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P16 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X2-SHERLOCK-VERT
+Change Component Footprint: Designator=P8 Old Footprint=MOLEX-HDR-1X2-SHERLOCK-HORZ New Footprint=MOLEX-HDR-1X3-SHERLOCK-RA
+Change Component Comment : Designator=P9 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P10 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P11 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P12 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P13 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P14 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P15 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P16 Old Comment=2-pin Horz Sherlock New Comment=2-pin Vert Sherlock
+Change Component Comment : Designator=P8 Old Comment=2-pin Horz Sherlock New Comment=3pos RA sherlock connector
+Change component parameters: Designator = "R21"; Footprint = "RES0603"; UniqueID = "\KLMAXCXU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1M"; VariantName = "[No Variations]"
+Change component parameters: Designator = "P8"; Footprint = "MOLEX-HDR-1X3-SHERLOCK-RA"; UniqueID = "\JORNXISD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex Connector Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "35363-0360"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM18932-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "P9"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\BPBRHLPL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P10"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\KXFKGSYM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P11"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\CTFUMJNS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P12"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\WXKVMELI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P13"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\FTCPXMXV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P14"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\FTFLHJBG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P15"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\YAFTNFAC"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P16"; Footprint = "MOLEX-HDR-1X2-SHERLOCK-VERT"; UniqueID = "\OOMDEMRP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Order Part Number"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=P8-3

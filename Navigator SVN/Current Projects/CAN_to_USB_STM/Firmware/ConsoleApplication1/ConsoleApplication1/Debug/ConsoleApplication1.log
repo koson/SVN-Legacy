@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  ConsoleApplication1.cpp
+c:\users\rosem\documents\mil\navigator svn\current projects\can_to_usb_stm\firmware\consoleapplication1\consoleapplication1\consoleapplication1.cpp(41): warning C4018: '<': signed/unsigned mismatch
+c:\users\rosem\documents\mil\navigator svn\current projects\can_to_usb_stm\firmware\consoleapplication1\consoleapplication1\consoleapplication1.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\rosem\documents\mil\navigator svn\current projects\can_to_usb_stm\firmware\consoleapplication1\consoleapplication1\consoleapplication1.cpp(55): warning C4018: '<': signed/unsigned mismatch
+  ConsoleApplication1.vcxproj -> C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Firmware\ConsoleApplication1\Debug\ConsoleApplication1.exe

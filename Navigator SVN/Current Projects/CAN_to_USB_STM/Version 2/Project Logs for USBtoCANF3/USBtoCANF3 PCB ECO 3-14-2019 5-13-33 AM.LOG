@@ -1,0 +1,197 @@
+Change Component Footprint: Designator=R1 Old Footprint=14-1210 New Footprint=RES0603
+Change Component Footprint: Designator=C7 Old Footprint=CAP1210 New Footprint=CAPC0603
+Change Component Footprint: Designator=C9 Old Footprint=CAP1210 New Footprint=CAPC0603
+Change Component Footprint: Designator=C1 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Footprint: Designator=C2 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Footprint: Designator=C3 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Footprint: Designator=C4 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Footprint: Designator=C5 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Footprint: Designator=C6 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Footprint: Designator=C8 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Footprint: Designator=C10 Old Footprint=CAPC0805 New Footprint=CAPC0603
+Change Component Comment : Designator=C7 Old Comment=CAP1210 New Comment=Cap
+Change Component Comment : Designator=C9 Old Comment=CAP1210 New Comment=Cap
+Change Component Comment : Designator=R1 Old Comment=Res3 New Comment=Res
+Change component parameters: Designator = "C7"; Footprint = "CAPC0603"; UniqueID = "\JVJDGUTG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9"; Footprint = "CAPC0603"; UniqueID = "\WQGSHVST"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C1"; Footprint = "CAPC0603"; UniqueID = "\TAXLJJMD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2"; Footprint = "CAPC0603"; UniqueID = "\VRFCCFKC"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1"; Footprint = "RES0603"; UniqueID = "\KKJFCQMB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
+Added Component: Designator=R2(J1-0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Component: Designator=R10(RES0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "120"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NRST Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=3V3 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=3V3 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=3V3 Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=3V3 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=3V3 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=3V3 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=3V3 Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=3V3 Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=3V3 Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=3V3 Pin=R1-1
+Added Pin To Net: NetName=NetLED1_A Pin=R1-2
+Added Pin To Net: NetName=3V3 Pin=R2-1
+Added Pin To Net: NetName=NRST Pin=R2-2
+Added Pin To Net: NetName=CANL_A Pin=R10-1
+Added Pin To Net: NetName=CANH_A Pin=R10-2
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=NRST Pin=S1-2
+Added Pin To Net: NetName=PE2 Pin=U1-1
+Added Pin To Net: NetName=PE3 Pin=U1-2
+Added Pin To Net: NetName=PE4 Pin=U1-3
+Added Pin To Net: NetName=PE5 Pin=U1-4
+Added Pin To Net: NetName=PE6 Pin=U1-5
+Added Pin To Net: NetName=3V3 Pin=U1-6
+Added Pin To Net: NetName=PC13 Pin=U1-7
+Added Pin To Net: NetName=PC14 Pin=U1-8
+Added Pin To Net: NetName=PC15 Pin=U1-9
+Added Pin To Net: NetName=PF9 Pin=U1-10
+Added Pin To Net: NetName=PF10 Pin=U1-11
+Added Pin To Net: NetName=PF0 Pin=U1-12
+Added Pin To Net: NetName=PF1 Pin=U1-13
+Added Pin To Net: NetName=NRST Pin=U1-14
+Added Pin To Net: NetName=PC0 Pin=U1-15
+Added Pin To Net: NetName=PC1 Pin=U1-16
+Added Pin To Net: NetName=PC2 Pin=U1-17
+Added Pin To Net: NetName=PC3 Pin=U1-18
+Added Pin To Net: NetName=PF2 Pin=U1-19
+Added Pin To Net: NetName=GND Pin=U1-20
+Added Pin To Net: NetName=3V3 Pin=U1-21
+Added Pin To Net: NetName=3V3 Pin=U1-22
+Added Pin To Net: NetName=PA0 Pin=U1-23
+Added Pin To Net: NetName=PA1 Pin=U1-24
+Added Pin To Net: NetName=PA2 Pin=U1-25
+Added Pin To Net: NetName=PA3 Pin=U1-26
+Added Pin To Net: NetName=PF4 Pin=U1-27
+Added Pin To Net: NetName=3V3 Pin=U1-28
+Added Pin To Net: NetName=PA4 Pin=U1-29
+Added Pin To Net: NetName=PA5 Pin=U1-30
+Added Pin To Net: NetName=PA6 Pin=U1-31
+Added Pin To Net: NetName=PA7 Pin=U1-32
+Added Pin To Net: NetName=PC4 Pin=U1-33
+Added Pin To Net: NetName=PC5 Pin=U1-34
+Added Pin To Net: NetName=PB0 Pin=U1-35
+Added Pin To Net: NetName=PB1 Pin=U1-36
+Added Pin To Net: NetName=PB2 Pin=U1-37
+Added Pin To Net: NetName=PE7 Pin=U1-38
+Added Pin To Net: NetName=PE8 Pin=U1-39
+Added Pin To Net: NetName=PE9 Pin=U1-40
+Added Pin To Net: NetName=PE10 Pin=U1-41
+Added Pin To Net: NetName=PE11 Pin=U1-42
+Added Pin To Net: NetName=PE12 Pin=U1-43
+Added Pin To Net: NetName=PE13 Pin=U1-44
+Added Pin To Net: NetName=PE14 Pin=U1-45
+Added Pin To Net: NetName=PE15 Pin=U1-46
+Added Pin To Net: NetName=PB10 Pin=U1-47
+Added Pin To Net: NetName=PB11 Pin=U1-48
+Added Pin To Net: NetName=GND Pin=U1-49
+Added Pin To Net: NetName=3V3 Pin=U1-50
+Added Pin To Net: NetName=PB12 Pin=U1-51
+Added Pin To Net: NetName=PB13 Pin=U1-52
+Added Pin To Net: NetName=CTS Pin=U1-53
+Added Pin To Net: NetName=PB15 Pin=U1-54
+Added Pin To Net: NetName=PD8 Pin=U1-55
+Added Pin To Net: NetName=PD9 Pin=U1-56
+Added Pin To Net: NetName=PD10 Pin=U1-57
+Added Pin To Net: NetName=PD11 Pin=U1-58
+Added Pin To Net: NetName=PD12 Pin=U1-59
+Added Pin To Net: NetName=PD13 Pin=U1-60
+Added Pin To Net: NetName=PD14 Pin=U1-61
+Added Pin To Net: NetName=PD15 Pin=U1-62
+Added Pin To Net: NetName=PC6 Pin=U1-63
+Added Pin To Net: NetName=PC7 Pin=U1-64
+Added Pin To Net: NetName=PC8 Pin=U1-65
+Added Pin To Net: NetName=PC9 Pin=U1-66
+Added Pin To Net: NetName=PA8 Pin=U1-67
+Added Pin To Net: NetName=PA9 Pin=U1-68
+Added Pin To Net: NetName=PA10 Pin=U1-69
+Added Pin To Net: NetName=CAN_RXA Pin=U1-70
+Added Pin To Net: NetName=CAN_TXA Pin=U1-71
+Added Pin To Net: NetName=PA13/SWDIO Pin=U1-72
+Added Pin To Net: NetName=PF6 Pin=U1-73
+Added Pin To Net: NetName=GND Pin=U1-74
+Added Pin To Net: NetName=3V3 Pin=U1-75
+Added Pin To Net: NetName=PA14/SWCLK Pin=U1-76
+Added Pin To Net: NetName=PA15 Pin=U1-77
+Added Pin To Net: NetName=PC10 Pin=U1-78
+Added Pin To Net: NetName=PC11 Pin=U1-79
+Added Pin To Net: NetName=PC12 Pin=U1-80
+Added Pin To Net: NetName=PD0 Pin=U1-81
+Added Pin To Net: NetName=PD1 Pin=U1-82
+Added Pin To Net: NetName=PD2 Pin=U1-83
+Added Pin To Net: NetName=PD3 Pin=U1-84
+Added Pin To Net: NetName=PD4 Pin=U1-85
+Added Pin To Net: NetName=PD5 Pin=U1-86
+Added Pin To Net: NetName=PD6 Pin=U1-87
+Added Pin To Net: NetName=PD7 Pin=U1-88
+Added Pin To Net: NetName=PB3/SWO Pin=U1-89
+Added Pin To Net: NetName=PB4 Pin=U1-90
+Added Pin To Net: NetName=PB5 Pin=U1-91
+Added Pin To Net: NetName=PB6 Pin=U1-92
+Added Pin To Net: NetName=PB7 Pin=U1-93
+Added Pin To Net: NetName=GND Pin=U1-94
+Added Pin To Net: NetName=PB8 Pin=U1-95
+Added Pin To Net: NetName=PB9 Pin=U1-96
+Added Pin To Net: NetName=PE0 Pin=U1-97
+Added Pin To Net: NetName=PE1 Pin=U1-98
+Added Pin To Net: NetName=GND Pin=U1-99
+Added Pin To Net: NetName=3V3 Pin=U1-100
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C1 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C2 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C3 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C4 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C5 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C6 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C7 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C8 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C9 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component C10 Cap
+Added Member To Class: ClassName=USBtoCANF3 Member=Component CANA 2-pin Horz Sherlock
+Added Member To Class: ClassName=USBtoCANF3 Member=Component R1 Res
+Added Member To Class: ClassName=USBtoCANF3 Member=Component R2 Res3
+Added Member To Class: ClassName=USBtoCANF3 Member=Component R10 Res
+Added Member To Class: ClassName=USBtoCANF3 Member=Component S1 SW-PB
+Added Room: Name=USBtoCANF3

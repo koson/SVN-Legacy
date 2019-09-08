@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=TDI Pin=R5-1
+Added Pin To Net: NetName=TDO/SWO Pin=R5-1
+Added Room: Name=24Vto5Vat1A-R1
+Added Room: Name=SystemStatusBoard

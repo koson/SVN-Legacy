@@ -1,0 +1,4 @@
+Record=DiagramHierarchy|SourceDocument=current_sensor_master.MbsDoc|Kind=Multi-board Schematic Module|Designator=PCB2|Source=..\Current Sensor\current_sensor\current_sensor.PrjPcb
+Record=SubProject|SourceDocument=current_sensor_master.MbsDoc|ProjectPath=..\Current Sensor\current_sensor\current_sensor.PrjPcb
+Record=DiagramHierarchy|SourceDocument=current_sensor_master.MbsDoc|Kind=Multi-board Schematic Module|Designator=PCB1|Source=..\Power\current_sensor_power\current_sensor_power.PrjPcb
+Record=SubProject|SourceDocument=current_sensor_master.MbsDoc|ProjectPath=..\Power\current_sensor_power\current_sensor_power.PrjPcb

@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=TDO/SWO Pin=P1-3
+Removed Pin From Net: NetName=TDI Pin=P1-4
+Removed Pin From Net: NetName=TDO/SWO Pin=R5-1
+Removed Member From Class: ClassName=SystemStatusBoard Member=Q?
+Added Pin To Net: NetName=TDI Pin=P1-3
+Added Pin To Net: NetName=TDO/SWO Pin=P1-4
+Added Pin To Net: NetName=TDI Pin=R5-1

@@ -1,0 +1,86 @@
+Removed Member From Class: ClassName=SystemStatusBoard Member=C10
+Removed Member From Class: ClassName=SystemStatusBoard Member=C11
+Removed Member From Class: ClassName=SystemStatusBoard Member=C12
+Removed Member From Class: ClassName=SystemStatusBoard Member=C13
+Removed Member From Class: ClassName=SystemStatusBoard Member=C14
+Removed Member From Class: ClassName=SystemStatusBoard Member=C15
+Removed Member From Class: ClassName=SystemStatusBoard Member=C16
+Removed Member From Class: ClassName=SystemStatusBoard Member=C17
+Removed Member From Class: ClassName=SystemStatusBoard Member=R13
+Removed Member From Class: ClassName=SystemStatusBoard Member=R14
+Removed Member From Class: ClassName=SystemStatusBoard Member=U3
+Added Component: Designator=C2(CAPC0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1000-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(BZX84C24LT1G)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "NTR4003NT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "NTR4003NT1GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(BZX84C24LT1G)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "NTR4003NT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "NTR4003NT1GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(BZX84C24LT1G)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "NTR4003NT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "NTR4003NT1GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(BZX84C24LT1G)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "NTR4003NT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "NTR4003NT1GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(BZX84C24LT1G)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "NTR4003NT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "NTR4003NT1GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(BZX84C24LT1G)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "NTR4003NT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "NTR4003NT1GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q?(BZX84C24LT1G)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "NTR4003NT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "NTR4003NT1GOSCT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VDD Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=NetQ?_A Pin=Q?-A
+Added Pin To Net: NetName=NetQ?_A Pin=Q?-A
+Added Net: Name=NetQ?_A
+Added Pin To Net: NetName=NetQ?_B Pin=Q?-B
+Added Pin To Net: NetName=NetQ?_B Pin=Q?-B
+Added Net: Name=NetQ?_B
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C1 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C2 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C3 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C4 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C5 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C6 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C7 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component C8 Cap
+Added Member To Class: ClassName=SystemStatusBoard Member=Component Q? NTR4003NT1G
+Added Member To Class: ClassName=SystemStatusBoard Member=Component Q? NTR4003NT1G
+Added Member To Class: ClassName=SystemStatusBoard Member=Component Q? NTR4003NT1G
+Added Member To Class: ClassName=SystemStatusBoard Member=Component Q? NTR4003NT1G
+Added Member To Class: ClassName=SystemStatusBoard Member=Component Q? NTR4003NT1G
+Added Member To Class: ClassName=SystemStatusBoard Member=Component Q? NTR4003NT1G
+Added Member To Class: ClassName=SystemStatusBoard Member=Component Q? NTR4003NT1G
+Added Member To Class: ClassName=SystemStatusBoard Member=Component R1 Res
+Added Member To Class: ClassName=SystemStatusBoard Member=Component R2 Res
+Added Member To Class: ClassName=SystemStatusBoard Member=Component U1 TM4C123GH6PMT7R
+Added Room: Name=24Vto5Vat1A-R1
+Added Room: Name=SystemStatusBoard

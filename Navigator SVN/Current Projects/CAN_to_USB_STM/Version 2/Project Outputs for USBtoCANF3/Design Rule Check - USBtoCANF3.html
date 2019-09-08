@@ -1,0 +1,457 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3/19/2019</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3:40:25 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc" class="file"><acronym title="C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc">C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">39</td></tr>
+</table>
+</td>
+</table><a name="IDP5JFCYYAG1E2L3JSS2QUF5KXWBZLQQI14MKKOYMVGM2U3BG4BRUI"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUJ44QEU0TW3OKH0UA2KU1LMNHFR0WKNTPVUGCDOAAJNBZTDU0M1G">Clearance Constraint (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4KMEIMYNLE0WK3OXGRWUDHQ1JNU2X4X0HXZHVVKTWIEU4PNWPRQK">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4KYQH1SDKRBGFB044NWCASJABE5GUFRXC4BNHIHZOI53CY0BYT0F">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVWW5SPA1O2YJECAQ50MHQTTFXIAW13KK44AAHUCWAILG4KCNUWPP">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSD35LH2IQURMMG2CL4JVT1KMAOY4XK351SJAR0PKR2VGSRNZFZNB">Width Constraint (Min=8mil) (Max=150mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXKK3IB2IB1ULIR2TYIWCUPOKMGMSUWBTJAIXI3KZM1C1MLPA3LGF">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQOYU0CLJV43HI0P04V0JSV3WKJESWYPAKJUTKBITCRDWFSEDC5FJ">Minimum Annular Ring (Minimum=7mil) (All)</a></td>
+<td class="column2">20</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDC1ZCYF1ICMT1PQGOB03HKZV30NPSVOV23QOLWSNBXDYCRT54IDDO">Hole Size Constraint (Min=10mil) (Max=150mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWNP2LNGAQWYYDDD5MGADLAIREDD5IFNWICSSIFF1S114VOMRN2DN">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2OGYDQCUKG3GIRKQTLKX1M3N5MUNUQY1JGLM5PKZAR2EVSPNHOLM">Minimum Solder Mask Sliver (Gap=1mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1MV0UEFMJ1UHJSKLD333J4P20IDUO5OS2MO0KEC2W2WL2VWFH3H">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVVQER2MKCRNQHPAMTH1KOWFZN4TAFZOKNTZUDCXGQXEJ1ITILVJ">Silk to Silk (Clearance=10mil) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJUWHHCV1MZZRLSKHLNHAJJZRDKRDQQIKDLYRJ4HKSIKHAZEGY4GJ">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1GJYG5JARHVMBVZCH3ISIN3BCCO0QV5J1MKBDMB1YVW0QZPSODO">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">39</td>
+</tr>
+</table><br><a name="IDQOYU0CLJV43HI0P04V0JSV3WKJESWYPAKJUTKBITCRDWFSEDC5FJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=7mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2024.875mil|Location2.X=2033.125mil|Location1.Y=1938.875mil|Location2.Y=1947.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2024.875mil|Location2.X=2033.125mil|Location1.Y=1938.875mil|Location2.Y=1947.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (1029mil,935mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2049.875mil|Location2.X=2058.125mil|Location1.Y=2645.875mil|Location2.Y=2654.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2049.875mil|Location2.X=2058.125mil|Location1.Y=2645.875mil|Location2.Y=2654.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (1054mil,1642mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2205.875mil|Location2.X=2214.125mil|Location1.Y=2549.875mil|Location2.Y=2558.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2205.875mil|Location2.X=2214.125mil|Location1.Y=2549.875mil|Location2.Y=2558.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (1210mil,1546mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2426.379mil|Location2.X=2434.629mil|Location1.Y=1420.371mil|Location2.Y=1428.621mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2426.379mil|Location2.X=2434.629mil|Location1.Y=1420.371mil|Location2.Y=1428.621mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (1430.504mil,416.496mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.875mil|Location2.X=2623.125mil|Location1.Y=2970.875mil|Location2.Y=2979.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.875mil|Location2.X=2623.125mil|Location1.Y=2970.875mil|Location2.Y=2979.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (1619mil,1967mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2662.875mil|Location2.X=2671.125mil|Location1.Y=1819.875mil|Location2.Y=1828.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2662.875mil|Location2.X=2671.125mil|Location1.Y=1819.875mil|Location2.Y=1828.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (1667mil,816mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2788.875mil|Location2.X=2797.125mil|Location1.Y=931.875mil|Location2.Y=940.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2788.875mil|Location2.X=2797.125mil|Location1.Y=931.875mil|Location2.Y=940.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (1793mil,-72mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1212.875mil|Location2.X=1221.125mil|Location1.Y=2539.937mil|Location2.Y=2548.187mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1212.875mil|Location2.X=1221.125mil|Location1.Y=2539.937mil|Location2.Y=2548.187mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (217mil,1536.062mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1230.379mil|Location2.X=1238.629mil|Location1.Y=2330.961mil|Location2.Y=2339.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1230.379mil|Location2.X=1238.629mil|Location1.Y=2330.961mil|Location2.Y=2339.211mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (234.504mil,1327.086mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1235.875mil|Location2.X=1244.125mil|Location1.Y=2515.875mil|Location2.Y=2524.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1235.875mil|Location2.X=1244.125mil|Location1.Y=2515.875mil|Location2.Y=2524.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (240mil,1512mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1389.339mil|Location2.X=1397.589mil|Location1.Y=2894.379mil|Location2.Y=2902.629mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1389.339mil|Location2.X=1397.589mil|Location1.Y=2894.379mil|Location2.Y=2902.629mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (393.464mil,1890.504mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1412.875mil|Location2.X=1421.125mil|Location1.Y=2700.875mil|Location2.Y=2709.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1412.875mil|Location2.X=1421.125mil|Location1.Y=2700.875mil|Location2.Y=2709.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (417mil,1697mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1435.875mil|Location2.X=1444.125mil|Location1.Y=2482.875mil|Location2.Y=2491.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1435.875mil|Location2.X=1444.125mil|Location1.Y=2482.875mil|Location2.Y=2491.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (440mil,1479mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1507.449mil|Location2.X=1515.699mil|Location1.Y=3003.875mil|Location2.Y=3012.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1507.449mil|Location2.X=1515.699mil|Location1.Y=3003.875mil|Location2.Y=3012.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (511.574mil,2000mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1706.875mil|Location2.X=1715.125mil|Location1.Y=2020.875mil|Location2.Y=2029.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1706.875mil|Location2.X=1715.125mil|Location1.Y=2020.875mil|Location2.Y=2029.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (711mil,1017mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1761.875mil|Location2.X=1770.125mil|Location1.Y=2516.875mil|Location2.Y=2525.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1761.875mil|Location2.X=1770.125mil|Location1.Y=2516.875mil|Location2.Y=2525.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (766mil,1513mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1838.875mil|Location2.X=1847.125mil|Location1.Y=1794.875mil|Location2.Y=1803.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1838.875mil|Location2.X=1847.125mil|Location1.Y=1794.875mil|Location2.Y=1803.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (843mil,791mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1932.875mil|Location2.X=1941.125mil|Location1.Y=2776.875mil|Location2.Y=2785.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1932.875mil|Location2.X=1941.125mil|Location1.Y=2776.875mil|Location2.Y=2785.125mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (937mil,1773mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1979.733mil|Location2.X=1987.983mil|Location1.Y=2637.733mil|Location2.Y=2645.983mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1979.733mil|Location2.X=1987.983mil|Location1.Y=2637.733mil|Location2.Y=2645.983mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (983.858mil,1633.858mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1983.937mil|Location2.X=1992.187mil|Location1.Y=2589.937mil|Location2.Y=2598.187mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1983.937mil|Location2.X=1992.187mil|Location1.Y=2589.937mil|Location2.Y=2598.187mil|Absolute=True">Minimum Annular Ring: (6mil &lt; 7mil) Via (988.062mil,1586.062mil) from Top Layer to Bottom Layer (Annular Ring=6mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID1MV0UEFMJ1UHJSKLD333J4P20IDUO5OS2MO0KEC2W2WL2VWFH3H"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1672.589mil|Location2.X=1676.922mil|Location1.Y=2576.85mil|Location2.Y=2581.183mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1672.589mil|Location2.X=1676.922mil|Location1.Y=2576.85mil|Location2.Y=2581.183mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Arc (652.874mil,1570.117mil) on Bottom Overlay And Pad U4-1(707.992mil,1586.062mil) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2560.575mil|Location2.X=2566.825mil|Location1.Y=2482.426mil|Location2.Y=2488.676mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2560.575mil|Location2.X=2566.825mil|Location1.Y=2482.426mil|Location2.Y=2488.676mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.936mil &lt; 5mil) Between Pad R2-1(1577.48mil,1469.804mil) on Bottom Layer And Track (1563.7mil,1491.456mil)(1563.7mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [3.936mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2588.135mil|Location2.X=2594.385mil|Location1.Y=2482.426mil|Location2.Y=2488.676mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2588.135mil|Location2.X=2594.385mil|Location1.Y=2482.426mil|Location2.Y=2488.676mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.936mil &lt; 5mil) Between Pad R2-1(1577.48mil,1469.804mil) on Bottom Layer And Track (1591.26mil,1491.456mil)(1591.26mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [3.936mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2560.575mil|Location2.X=2566.825mil|Location1.Y=2509.985mil|Location2.Y=2516.235mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2560.575mil|Location2.X=2566.825mil|Location1.Y=2509.985mil|Location2.Y=2516.235mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.938mil &lt; 5mil) Between Pad R2-2(1577.48mil,1528.858mil) on Bottom Layer And Track (1563.7mil,1491.456mil)(1563.7mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [3.938mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2590.983mil|Location2.X=2597.233mil|Location1.Y=2509.777mil|Location2.Y=2516.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2590.983mil|Location2.X=2597.233mil|Location1.Y=2509.777mil|Location2.Y=2516.027mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.867mil &lt; 5mil) Between Pad R2-2(1577.48mil,1528.858mil) on Bottom Layer And Track (1591.26mil,1491.456mil)(1591.26mil,1507.204mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [4.867mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2136.462mil|Location2.X=2142.712mil|Location1.Y=2594.945mil|Location2.Y=2601.195mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2136.462mil|Location2.X=2142.712mil|Location1.Y=2594.945mil|Location2.Y=2601.195mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.118mil &lt; 5mil) Between Pad S1-1(1189.646mil,1628.07mil) on Multi-Layer And Track (1134.528mil,1326.496mil)(1134.528mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.118mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2136.635mil|Location2.X=2142.885mil|Location1.Y=2420.248mil|Location2.Y=2426.498mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2136.635mil|Location2.X=2142.885mil|Location1.Y=2420.248mil|Location2.Y=2426.498mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.464mil &lt; 5mil) Between Pad S1-2(1189.646mil,1428.07mil) on Multi-Layer And Track (1134.528mil,1326.496mil)(1134.528mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.464mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2537.752mil|Location2.X=2544.002mil|Location1.Y=2431.954mil|Location2.Y=2438.204mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2537.752mil|Location2.X=2544.002mil|Location1.Y=2431.954mil|Location2.Y=2438.204mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.074mil &lt; 5mil) Between Pad S1-3(1489.646mil,1428.07mil) on Multi-Layer And Track (1547.914mil,1326.496mil)(1547.914mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.074mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2521.563mil|Location2.X=2527.813mil|Location1.Y=2604.856mil|Location2.Y=2611.106mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2521.563mil|Location2.X=2527.813mil|Location1.Y=2604.856mil|Location2.Y=2611.106mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (2.299mil &lt; 5mil) Between Pad S1-4(1489.646mil,1628.07mil) on Multi-Layer And Text "R2" (1595.48mil,1574.496mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [2.299mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2537.752mil|Location2.X=2544.002mil|Location1.Y=2631.954mil|Location2.Y=2638.204mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2537.752mil|Location2.X=2544.002mil|Location1.Y=2631.954mil|Location2.Y=2638.204mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.074mil &lt; 5mil) Between Pad S1-4(1489.646mil,1628.07mil) on Multi-Layer And Track (1547.914mil,1326.496mil)(1547.914mil,1726.496mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.074mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2572.079mil|Location2.Y=2576.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2572.079mil|Location2.Y=2576.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-1(707.992mil,1586.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2522.079mil|Location2.Y=2526.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2522.079mil|Location2.Y=2526.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-2(707.992mil,1536.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2472.079mil|Location2.Y=2476.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2472.079mil|Location2.Y=2476.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-3(707.992mil,1486.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2422.079mil|Location2.Y=2426.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1690.077mil|Location2.X=1694.411mil|Location1.Y=2422.079mil|Location2.Y=2426.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-4(707.992mil,1436.062mil) on Bottom Layer And Track (692.244mil,1412.636mil)(692.244mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2422.079mil|Location2.Y=2426.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2422.079mil|Location2.Y=2426.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-5(519.016mil,1436.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2472.079mil|Location2.Y=2476.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2472.079mil|Location2.Y=2476.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-6(519.016mil,1486.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2522.079mil|Location2.Y=2526.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2522.079mil|Location2.Y=2526.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-7(519.016mil,1536.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2572.079mil|Location2.Y=2576.412mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1532.597mil|Location2.X=1536.931mil|Location1.Y=2572.079mil|Location2.Y=2576.412mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad U4-8(519.016mil,1586.062mil) on Bottom Layer And Track (534.764mil,1412.636mil)(534.764mil,1609.488mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDVVQER2MKCRNQHPAMTH1KOWFZN4TAFZOKNTZUDCXGQXEJ1ITILVJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1654.375mil|Location2.X=1665.625mil|Location1.Y=2399.249mil|Location2.Y=2410.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\rosem\Documents\MIL\Navigator SVN\Current Projects\CAN_to_USB_STM\Version 2\USBtoCANF3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1654.375mil|Location2.X=1665.625mil|Location1.Y=2399.249mil|Location2.Y=2410.499mil|Absolute=True">Silk To Silk Clearance Constraint: (7.65mil &lt; 10mil) Between Text "R10" (660mil,1358.062mil) on Bottom Overlay And Track (534.764mil,1412.636mil)(692.244mil,1412.636mil) on Bottom Overlay Silk Text to Silk Clearance [7.65mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

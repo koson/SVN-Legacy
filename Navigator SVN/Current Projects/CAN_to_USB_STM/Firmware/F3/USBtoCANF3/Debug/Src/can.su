@@ -1,0 +1,6 @@
+can.c:59:6:MX_CAN_Init	16	static
+can.c:81:6:HAL_CAN_MspInit	56	static
+can.c:116:6:HAL_CAN_MspDeInit	8	static
+can.c:143:6:canSetup	16	static
+can.c:187:6:HAL_CAN_TxMailbox0CompleteCallback	0	static
+can.c:190:6:HAL_CAN_RxFifo0MsgPendingCallback	8	static

@@ -1,0 +1,20 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: MILBoard.PcbDoc   3/17/2019  10:26:08 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : MILBoard.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.254mm)                                           Round             16        PTH        0.00inch (0.00mm)
+T2      25mil (0.635mm)                                           Round             9         PTH        0.00inch (0.00mm)
+T3      30mil (0.762mm)                                           Round             4         PTH        0.00inch (0.00mm)
+T4      32mil (0.8mm)                                             Round             6         PTH        0.00inch (0.00mm)
+T5      35mil (0.9mm)                                             Round             30        PTH        0.00inch (0.00mm)
+T6      39mil (1mm)                                               Round             6         PTH        0.00inch (0.00mm)
+T7      129mil (3.264mm)                                          Round             4         PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              75
+
+Total Processing Time (hh:mm:ss) : 00:00:00

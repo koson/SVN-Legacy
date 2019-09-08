@@ -1,0 +1,7 @@
+Record=TopLevelDocument|FileName=LocalKillTop.SchDoc
+Record=SheetSymbol|SourceDocument=LocalKillTop.SchDoc|Designator=FTDI|SchDesignator=FTDI|FileName=USBtoUART.SchDoc|SymbolType=Normal|RawFileName=USBtoUART.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=LocalKillTop.SchDoc|Designator=Input|SchDesignator=Input|FileName=Input.SchDoc|SymbolType=Normal|RawFileName=Input.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=LocalKillTop.SchDoc|Designator=MCU|SchDesignator=MCU|FileName=MCU.SchDoc|SymbolType=Normal|RawFileName=MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=LocalKillTop.SchDoc|Designator=Output|SchDesignator=Output|FileName=Output.SchDoc|SymbolType=Normal|RawFileName=Output.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=LocalKillTop.SchDoc|Designator=Power|SchDesignator=Power|FileName=Power.SchDoc|SymbolType=Normal|RawFileName=Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=LocalKillTop.SchDoc|Designator=RF|SchDesignator=RF|FileName=Radio.SchDoc|SymbolType=Normal|RawFileName=Radio.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
